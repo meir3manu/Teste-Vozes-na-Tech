@@ -7,85 +7,98 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>Teste Vozes na Tech </h1>
-            <img src="logo-vozes-na-tech.png" alt="Logo da Vozes na Tech">
+    <header class="site-header">
+        <div class="header-container">
+            <img src="logo-vozes-na-tech.png" alt="Logo da Vozes na Tech" class="logo">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
         </div>
+    </header>
+    <div class="caixa">
+        <h1>Teste Vozes na Tech </h1>
+        <br>
         <form id="quizForm">
-            <div class="question">
-                <h2>1. Você está organizando uma festa e precisa criar um guia com horários de todas as atividades realizadas, Como você faria isso de forma eficiente e organizada?</h2>
-                <label><input type="radio" name="q1" value="a"> Montaria um plano flexível, com um conjunto de atividades principais, adaptando-as conforme o ritmo e interesse dos convidados.</label>
-                <label><input type="radio" name="q1" value="b">Desenharia um mapa da festa, mostrando como as atividades se relacionam nos ambientes.</label>
-                <label><input type="radio" name="q1" value="c"> Criaria um cronograma para garantir que tudo corra conforme planejado.</label>
-                <label><input type="radio" name="q1" value="d"> Utilizaria um app de produtividade, configurando lembretes automáticos e monitorando o progresso das atividades.</label>
-                <label><input type="radio" name="q1" value="e"> Criaria um enredo detalhado, similar a um roteiro de filme, definindo cenas e horários específicos para cada atividade. </label>
-                <label><input type="radio" name="q1" value="f"> Planejaria uma experiência temática, desenhando convites e decorações para envolver os convidados.</label>
-            </div>
-            <!-- Repita para todas as perguntas -->
-            <div class="question">
-                <h2>2. Você está planejando uma viagem e precisa pesquisar diferentes destinos, levando em consideração fatores como clima, preço, atrações turísticas e avaliações de outros viajantes. Como você organizariapara tomar a melhor decisão?</h2>
-                <label><input type="radio" name="q2" value="a"> Mergulharia em blogs de viagem e fóruns, criando um diário de viagem virtual com opiniões e experiências coletadas.</label>
-                <label><input type="radio" name="q2" value="b">Consultaria guias e pacotes turísticos para formar uma visão mais abrangente de cada destino.</label>
-                <label><input type="radio" name="q2" value="c"> Criaria um plano de viagem usando uma ferramenta de gestão, com cronograma e orçamento detalhados.</label>
-                <label><input type="radio" name="q2" value="d"> Criaria uma lista com notas para cada destino, destacando vantagens e desvantagens.</label>
-                <label><input type="radio" name="q2" value="e"> Desenvolveria um mapa interativo onde você pode clicar em cada destino para obter informações detalhadas.</label> 
-                <label><input type="radio" name="q2" value="f"> Desenvolveria uma apresentação visual dos destinos com fotos, vídeos e descrições envolventes.</label>
-            </div>
-            <!-- Repita para todas as perguntas -->
-            <div class="question">
-                <h2>3.  Você está em um lugar desconhecido e encontra uma caixa cheia de moedas antigas de diferentes países. Como você descobriria o valor dessas moedas e se elas valem algo no mundo atual?</h2>
-                <label><input type="radio" name="q3" value="a"> Utilizaria um aplicativo de reconhecimento de moedas com inteligência artificial para obter uma identificação e avaliação rápida.</label>
-                <label><input type="radio" name="q3" value="b"> Pesquisaria a história e o contexto das moedas usando livros antigos, visitas a museus e sites especializados para entender seu valor histórico. </label>
-                <label><input type="radio" name="q3" value="c"> Organizaria um projeto de pesquisa detalhado para catalogar e avaliar as moedas.</label>
-                <label><input type="radio" name="q3" value="d"> Levaria as moedas a um especialista em numismática para uma avaliação detalhada e precisa de seu valor no mercado atual. </label>
-                <label><input type="radio" name="q3" value="e"> Participaria de fóruns e comunidades online de colecionadores de moedas, comparando suas descobertas com as de outros colecionadores.</label>
-                <label><input type="radio" name="q3" value="f"> Desenvolveria uma aplicação interativa que permite explorar as moedas e suas histórias.</label>
-            </div>
-            <!-- Repita para todas as perguntas -->
-            <div class="question">
-                <h2>4. Você é um detetive e precisa desvendar um crime. Como você organizaria as pistas e deduziria o que aconteceu, passo a passo, para solucionar o mistério?</h2>
-                <label><input type="radio" name="q4" value="a"> Entrevistaria testemunhas e compararia seus depoimentos minuciosamente, buscando inconsistências e informações cruciais.</label>
-                <label><input type="radio" name="q4" value="b"> Recriaria a linha do tempo dos eventos usando gráficos e recursos visuais, para entender a sequência e o contexto do crime. </label>
-                <label><input type="radio" name="q4" value="c"> Gerenciaria as pistas e a investigação usando um software de organização. </label>
-                <label><input type="radio" name="q4" value="d"> Criaria um sistema de classificação para organizar as pistas por tipo, data e local de coleta, facilitando a análise. </label>
-                <label><input type="radio" name="q4" value="e"> Desenvolveria um diagrama interativo com todas as pistas, conectando-as e destacando padrões e possíveis suspeitos.</label>
-                <label><input type="radio" name="q4" value="f"> Escreveria um relato detalhado dos eventos, ilustrando cada etapa da investigação com imagens e diagramas. </label>
-            </div>
-            <!-- Repita para todas as perguntas -->
-            <div class="question">
-                <h2>5. Você está liderando uma equipe em um projeto importante. Como você coordenaria a equipe e garantiria que todos estejam alinhados e contribuindo para o sucesso do projeto?</h2>
-                <label><input type="radio" name="q5" value="a"> Realizaria reuniões regulares para compartilhar atualizações e resolver problemas em equipe, incentivando a comunicação aberta.</label>
-                <label><input type="radio" name="q5" value="b"> Estabeleceria um sistema de recompensas para incentivar a produtividade e a inovação, reconhecendo as contribuições individuais.</label>
-                <label><input type="radio" name="q5" value="c"> Usaria uma ferramenta de gestão de projetos para definir tarefas, prazos e acompanhar o progresso. </label>
-                <label><input type="radio" name="q5" value="d"> Criaria um dashboard para monitorar o desempenho da equipe, identificando áreas de melhoria e ajustando estratégias conforme necessário. </label>
-                <label><input type="radio" name="q5" value="e"> Desenvolveria uma plataforma colaborativa onde todos podem compartilhar ideias, arquivos e feedbacks em tempo real.</label>
-                <label><input type="radio" name="q5" value="f"> Produziria materiais visuais e gráficos para ilustrar o progresso do projeto e motivar a equipe.</label>
-            </div>
-            <!-- Repita para todas as perguntas -->
-            <div class="question">
-                <h2>6. Você está participando de um hackathon e precisa criar uma solução inovadora em um curto espaço de tempo. Como você e sua equipe dividiriam as tarefas e desenvolveriam a solução?</h2>
-                <label><input type="radio" name="q6" value="a"> Faria uma rápida avaliação das habilidades de cada membro da equipe e distribuiria tarefas conforme suas especialidades.</label>
-                <label><input type="radio" name="q6" value="b"> Criaria um diagrama de fluxo para visualizar a solução final e identificar as etapas necessárias para implementá-la.</label>
-                <label><input type="radio" name="q6" value="c"> Utilizaria uma metodologia ágil para dividir as tarefas em sprints e realizar reuniões diárias de acompanhamento.</label>
-                <label><input type="radio" name="q6" value="d"> Configuraria um sistema de versionamento para que todos possam trabalhar simultaneamente no código, monitorando as alterações.</label>
-                <label><input type="radio" name="q6" value="e"> Desenharia um protótipo funcional para validar a ideia rapidamente, ajustando conforme o feedback recebido.</label>
-                <label><input type="radio" name="q6" value="f"> Criaria uma apresentação visual impactante para demonstrar a solução final aos jurados e investidores.</label>
-            </div>
-            <!-- Repita para todas as perguntas -->
-            <div class="question">
-                <h2>7. Como um arquiteto, qual é o primeiro recurso tecnologico que você implementaia para garantir segurança e eficiência no projeto de uma casa moderna ?</h2>
-                <label><input type="radio" name="q7" value="a"> Avaliaria possíveis pontos de vulnerabilidade na estrutura da casa e implementaria medidas de segurança em cada nível, como sistemas de alarme, câmeras de segurança e fechaduras inteligentes.</label>
-                <label><input type="radio" name="q7" value="b"> Analisaria as tendências de uso de tecnologias modernas e integraria eletrodomésticos inteligentes para gestão de serviços e manutenção da casa, aumentando a segurança e a transparência.</label>
-                <label><input type="radio" name="q7" value="c">Aplicaria padrões de design reconhecidos para criar uma arquitetura modular e escalável, facilitando futuras expansões e manutenções da casa.</label>
-                <label><input type="radio" name="q7" value="d"> implementaria um sistema de monitoramento contínuo para analisar o desempenho das diversas instalações da casa (elétrica, hidráulica, etc.), identificando e corrigindo gargalos ou problemas antes que se tornem críticos.</label>
-                <label><input type="radio" name="q7" value="e"> Utilizaria um sistema de gestão de projeto digital para coordenar todas as fases da construção, garantindo que cada etapa seja concluída de maneira eficiente e dentro do cronograma.</label>
-                <label><input type="radio" name="q7" value="f"> Criaria um modelo 3D detalhado da casa para visualizar e ajustar o design conforme necessário, otimizando a funcionalidade e o conforto do ambiente</label>
-            </div>
-            <button type="button" onclick="calculateResult()">Ver Resultado</button>
-        </form>
-        <div id="result"></div>
-    </div>
-    <script src="script.js"></script>
-</body>
-</html>
+            <!-- Form content -->
+            
+                <div class="question">
+                    <h2>1. Você está organizando uma festa e precisa criar um guia com horários de todas as atividades da festa, Como você faria isso de forma eficiente e organizada?</h2>
+                    <label><input type="radio" name="q1" value="a"> Montaria um plano flexível, com um conjunto de atividades principais, adaptando-as conforme o ritmo e interesse dos convidados.</label>
+                    <label><input type="radio" name="q1" value="b">Desenharia um mapa da festa, mostrando como as atividades se relacionam nos ambientes.</label>
+                    <label><input type="radio" name="q1" value="c"> Criaria um cronograma para garantir que tudo corra conforme planejado.</label>
+                    <label><input type="radio" name="q1" value="d"> Utilizaria um app de produtividade, configurando lembretes automáticos e monitorando o progresso das atividades.</label>
+                    <label><input type="radio" name="q1" value="e"> Criaria um enredo detalhado, similar a um roteiro de filme, definindo cenas e horários específicos para cada atividade. </label>
+                    <label><input type="radio" name="q1" value="f"> Planejaria uma experiência temática, desenhando convites e decorações para envolver os convidados.</label>
+                </div>
+                <!-- Repita para todas as perguntas -->
+                <div class="question">
+                    <h2>2. Você está planejando uma viagem e precisa pesquisar diferentes destinos, levando em consideração fatores como clima, preço, atrações turísticas e avaliações de outros viajantes. Como você organizariapara tomar a melhor decisão?</h2>
+                    <label><input type="radio" name="q2" value="a"> Mergulharia em blogs de viagem e fóruns, criando um diário de viagem virtual com opiniões e experiências coletadas.</label>
+                    <label><input type="radio" name="q2" value="b">Consultaria guias e pacotes turísticos para formar uma visão mais abrangente de cada destino.</label>
+                    <label><input type="radio" name="q2" value="c"> Criaria um plano de viagem usando uma ferramenta de gestão, com cronograma e orçamento detalhados.</label>
+                    <label><input type="radio" name="q2" value="d"> Criaria uma lista com notas para cada destino, destacando vantagens e desvantagens.</label>
+                    <label><input type="radio" name="q2" value="e"> Desenvolveria um mapa interativo onde você pode clicar em cada destino para obter informações detalhadas.</label> 
+                    <label><input type="radio" name="q2" value="f"> Desenvolveria uma apresentação visual dos destinos com fotos, vídeos e descrições envolventes.</label>
+                </div>
+                <!-- Repita para todas as perguntas -->
+                <div class="question">
+                    <h2>3.  Você está em um lugar desconhecido e encontra uma caixa cheia de moedas antigas de diferentes países. Como você descobriria o valor dessas moedas e se elas valem algo no mundo atual?</h2>
+                    <label><input type="radio" name="q3" value="a"> Utilizaria um aplicativo de reconhecimento de moedas com inteligência artificial para obter uma identificação e avaliação rápida.</label>
+                    <label><input type="radio" name="q3" value="b"> Pesquisaria a história e o contexto das moedas usando livros antigos, visitas a museus e sites especializados para entender seu valor histórico. </label>
+                    <label><input type="radio" name="q3" value="c"> Organizaria um projeto de pesquisa detalhado para catalogar e avaliar as moedas.</label>
+                    <label><input type="radio" name="q3" value="d"> Levaria as moedas a um especialista em numismática para uma avaliação detalhada e precisa de seu valor no mercado atual. </label>
+                    <label><input type="radio" name="q3" value="e"> Participaria de fóruns e comunidades online de colecionadores de moedas, comparando suas descobertas com as de outros colecionadores.</label>
+                    <label><input type="radio" name="q3" value="f"> Desenvolveria uma aplicação interativa que permite explorar as moedas e suas histórias.</label>
+                </div>
+                <!-- Repita para todas as perguntas -->
+                <div class="question">
+                    <h2>4. Você é um detetive e precisa desvendar um crime. Como você organizaria as pistas e deduziria o que aconteceu, passo a passo, para solucionar o mistério?</h2>
+                    <label><input type="radio" name="q4" value="a"> Entrevistaria testemunhas e compararia seus depoimentos minuciosamente, buscando inconsistências e informações cruciais.</label>
+                    <label><input type="radio" name="q4" value="b"> Recriaria a linha do tempo dos eventos usando gráficos e recursos visuais, para entender a sequência e o contexto do crime. </label>
+                    <label><input type="radio" name="q4" value="c"> Gerenciaria as pistas e a investigação usando um software de organização. </label>
+                    <label><input type="radio" name="q4" value="d"> Criaria um sistema de classificação para organizar as pistas por tipo, data e local de coleta, facilitando a análise. </label>
+                    <label><input type="radio" name="q4" value="e"> Desenvolveria um diagrama interativo com todas as pistas, conectando-as e destacando padrões e possíveis suspeitos.</label>
+                    <label><input type="radio" name="q4" value="f"> Escreveria um relato detalhado dos eventos, ilustrando cada etapa da investigação com imagens e diagramas. </label>
+                </div>
+                <!-- Repita para todas as perguntas -->
+                <div class="question">
+                    <h2>5. Você está liderando uma equipe em um projeto importante. Como você coordenaria a equipe e garantiria que todos estejam alinhados e contribuindo para o sucesso do projeto?</h2>
+                    <label><input type="radio" name="q5" value="a"> Realizaria reuniões regulares para compartilhar atualizações e resolver problemas em equipe, incentivando a comunicação aberta.</label>
+                    <label><input type="radio" name="q5" value="b"> Estabeleceria um sistema de recompensas para incentivar a produtividade e a inovação, reconhecendo as contribuições individuais.</label>
+                    <label><input type="radio" name="q5" value="c"> Usaria uma ferramenta de gestão de projetos para definir tarefas, prazos e acompanhar o progresso. </label>
+                    <label><input type="radio" name="q5" value="d"> Criaria um dashboard para monitorar o desempenho da equipe, identificando áreas de melhoria e ajustando estratégias conforme necessário. </label>
+                    <label><input type="radio" name="q5" value="e"> Desenvolveria uma plataforma colaborativa onde todos podem compartilhar ideias, arquivos e feedbacks em tempo real.</label>
+                    <label><input type="radio" name="q5" value="f"> Produziria materiais visuais e gráficos para ilustrar o progresso do projeto e motivar a equipe.</label>
+                </div>
+                <!-- Repita para todas as perguntas -->
+                <div class="question">
+                    <h2>6. Você está participando de um hackathon e precisa criar uma solução inovadora em um curto espaço de tempo. Como você e sua equipe dividiriam as tarefas e desenvolveriam a solução?</h2>
+                    <label><input type="radio" name="q6" value="a"> Faria uma rápida avaliação das habilidades de cada membro da equipe e distribuiria tarefas conforme suas especialidades.</label>
+                    <label><input type="radio" name="q6" value="b"> Criaria um diagrama de fluxo para visualizar a solução final e identificar as etapas necessárias para implementá-la.</label>
+                    <label><input type="radio" name="q6" value="c"> Utilizaria uma metodologia ágil para dividir as tarefas em sprints e realizar reuniões diárias de acompanhamento.</label>
+                    <label><input type="radio" name="q6" value="d"> Configuraria um sistema de versionamento para que todos possam trabalhar simultaneamente no código, monitorando as alterações.</label>
+                    <label><input type="radio" name="q6" value="e"> Desenharia um protótipo funcional para validar a ideia rapidamente, ajustando conforme o feedback recebido.</label>
+                    <label><input type="radio" name="q6" value="f"> Criaria uma apresentação visual impactante para demonstrar a solução final aos jurados e investidores.</label>
+                </div>
+                <!-- Repita para todas as perguntas -->
+                <div class="question">
+                    <h2>7. Como um arquiteto, qual é o primeiro recurso tecnologico que você implementaia para garantir segurança e eficiência no projeto de uma casa moderna ?</h2>
+                    <label><input type="radio" name="q7" value="a"> Avaliaria possíveis pontos de vulnerabilidade na estrutura da casa e implementaria medidas de segurança em cada nível, como sistemas de alarme, câmeras de segurança e fechaduras inteligentes.</label>
+                    <label><input type="radio" name="q7" value="b"> Analisaria as tendências de uso de tecnologias modernas e integraria eletrodomésticos inteligentes para gestão de serviços e manutenção da casa, aumentando a segurança e a transparência.</label>
+                    <label><input type="radio" name="q7" value="c">Aplicaria padrões de design reconhecidos para criar uma arquitetura modular e escalável, facilitando futuras expansões e manutenções da casa.</label>
+                    <label><input type="radio" name="q7" value="d"> implementaria um sistema de monitoramento contínuo para analisar o desempenho das diversas instalações da casa (elétrica, hidráulica, etc.), identificando e corrigindo gargalos ou problemas antes que se tornem críticos.</label>
+                    <label><input type="radio" name="q7" value="e"> Utilizaria um sistema de gestão de projeto digital para coordenar todas as fases da construção, garantindo que cada etapa seja concluída de maneira eficiente e dentro do cronograma.</label>
+                    <label><input type="radio" name="q7" value="f"> Criaria um modelo 3D detalhado da casa para visualizar e ajustar o design conforme necessário, otimizando a funcionalidade e o conforto do ambiente</label>
+                </div>
+                <button type="button" onclick="calculateResult()">Ver Resultado</button>
+            </form>
+            <div id="result"></div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+    </html>
+    
