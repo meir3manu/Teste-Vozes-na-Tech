@@ -1,43 +1,66 @@
 body {
-    font-family: 'Roboto', arial; /* Fonte moderna */
-    background-color: #392361; /* Cor de fundo mais suave */
+    font-family: 'Roboto', Arial, sans-serif; 
+    background-color: #392361; 
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 550vh; /* Altura da tela ajustada para 100vh */
+    
 }
 
-.container {
-    background-color: #ffffff;
-    padding: 20px; /* Maior espaço interno */
-    border-radius: 12px; /* Bordas mais arredondadas */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra mais suave e pronunciada */
-    width: 100%;
-    max-width: 750px; /* Largura máxima aumentada */
-    box-sizing: border-box;
+.site-header {
+    background-color: #fff34d;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-.header {
+.header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fff34d; /* Cor do cabeçalho mais tecnológica */
-    padding: 10px 20px; /* Maior espaço interno */
-    border-radius: 12px 12px 0 0; /* Bordas arredondadas no topo */
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.header img {
-    max-width: 120px; /* Tamanho máximo ajustado */
+.logo {
+    max-width: 150px;
     height: auto;
 }
 
-.header h1 {
-    font-size: 30px; /* Tamanho da fonte aumentado */
-    color: #392361; /* Cor do texto mais clara */
+nav ul {
+    display: flex;
+    list-style: none;
     margin: 0;
-    font-weight: 500; /* Peso da fonte ajustado */
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #392361;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+}
+
+
+.caixa {
+    background-color: #ffffff;
+    padding: 20px; 
+    border-radius: 12px; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    width: 100%;
+    max-width: 750px; 
+    box-sizing: border-box;
+    margin: auto; /* Centraliza a caixa horizontalmente */
 }
 
 .question {
@@ -84,3 +107,4 @@ button:hover {
     color: #333;
     font-weight: 300; /* Peso da fonte ajustado */
 }
+
