@@ -8,7 +8,7 @@ body {
 
 .site-header {
     background-color: #fff34d;
-    padding: 0 10% ;
+    padding: 10PX 20PX ;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
