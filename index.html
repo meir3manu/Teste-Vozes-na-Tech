@@ -714,12 +714,18 @@
     document.getElementById('year').textContent = new Date().getFullYear();
 
     // Form CTA placeholder (troque pelos links reais dos formulários Google)
-    const FORMS = { aluna:'#', voluntario:'#', parceiro:'#', doar:'#' };
+    const FORMS = {
+      aluna:'https://docs.google.com/forms/d/e/1FAIpQLSfOqBjxTorLz0x0jtC_sUSk1C4HPLf9CweJFnRk7aJZMJQ3rA/viewform',
+      voluntario:'https://docs.google.com/forms/d/e/1FAIpQLSc7pXazj43K5IdN5X230KHiY5icV0SgDxHVASjOQQZLADHOxw/viewform',
+      parceiro:'https://docs.google.com/forms/d/e/1FAIpQLScSL6Jwk4Z4hy0soiL6Ccqi2OpM79IYo06SVHkF2WHn_Oc41A/viewform',
+      doar:'https://docs.google.com/forms/d/e/1FAIpQLScSL6Jwk4Z4hy0soiL6Ccqi2OpM79IYo06SVHkF2WHn_Oc41A/viewform'
+    };
     document.querySelectorAll('[data-form]').forEach(el => {
       el.addEventListener('click', (ev) => {
+        ev.preventDefault();
         const url = FORMS[el.dataset.form];
-        if(!url || url === '#'){ ev.preventDefault(); alert('Em breve: link do formulário será conectado aqui.'); }
-        else { el.href = url; }
+        if(!url || url === '#'){ alert('Em breve: link do formulário será conectado aqui.'); }
+        else { window.open(url, '_blank', 'noopener'); }
       });
     });
 
