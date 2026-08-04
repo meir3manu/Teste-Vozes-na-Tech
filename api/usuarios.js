@@ -1,5 +1,5 @@
 // Vercel Serverless Function: api/usuarios.js
-// Proxies Supabase REST API requests server-side safely
+// Proxies Supabase REST API requests server-side using Environment Variables
 
 export default async function handler(req, res) {
   // CORS Headers
@@ -11,8 +11,11 @@ export default async function handler(req, res) {
     return res.status(200).end();
   }
 
-  const SUPABASE_SECRET_KEY = process.env.SUPABASE_SECRET_KEY || '';
-  
+  const SUPABASE_SECRET_KEY = process.env.SUPABASE_SECRET_KEY;
+  if (!SUPABASE_SECRET_KEY) {
+    return res.status(500).json({ error: 'SUPABASE_SECRET_KEY não configurado no ambiente Vercel.' });
+  }
+
   // Preserve query parameters (e.g. ?email=eq... or ?id=eq...)
   const queryStr = req.url.includes('?') ? req.url.substring(req.url.indexOf('?')) : '';
   const supabaseTargetUrl = `https://qeplhebidpkkwxazbdmk.supabase.co/rest/v1/usuarios${queryStr}`;
