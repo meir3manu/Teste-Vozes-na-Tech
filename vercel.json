@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "rewrites": [
+    { "source": "/api/usuarios", "destination": "/api/usuarios.js" },
+    { "source": "/api/supabase/usuarios", "destination": "/api/usuarios.js" }
+  ]
+}

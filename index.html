@@ -363,6 +363,7 @@
       </nav>
 
       <div class="nav-cta">
+        <a href="aluna.html" class="btn btn-ghost">Área da Aluna</a>
         <a href="#doar" class="btn btn-ghost">Doar</a>
         <a href="#participe" class="btn btn-primary">Participe</a>
         <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
@@ -371,6 +372,7 @@
   </header>
 
   <div class="mobile-menu" id="mobileMenu">
+    <a href="aluna.html" style="font-weight:700; color:var(--purple)">✨ Área da Aluna (Login / Cadastro)</a>
     <a href="encontro.html">Encontro na FIAP</a>
     <a href="#sobre">Sobre</a>
     <a href="#servicos">Serviços</a>
@@ -718,17 +720,23 @@
     // Year
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // Form CTA placeholder (troque pelos links reais dos formulários Google)
+    // Form CTA handlers
     const FORMS = {
-      aluna:'https://docs.google.com/forms/d/e/1FAIpQLSfOqBjxTorLz0x0jtC_sUSk1C4HPLf9CweJFnRk7aJZMJQ3rA/viewform',
+      aluna:'aluna.html',
       voluntario:'https://docs.google.com/forms/d/e/1FAIpQLSc7pXazj43K5IdN5X230KHiY5icV0SgDxHVASjOQQZLADHOxw/viewform',
       parceiro:'https://docs.google.com/forms/d/e/1FAIpQLScSL6Jwk4Z4hy0soiL6Ccqi2OpM79IYo06SVHkF2WHn_Oc41A/viewform',
       doar:'https://docs.google.com/forms/d/e/1FAIpQLScSL6Jwk4Z4hy0soiL6Ccqi2OpM79IYo06SVHkF2WHn_Oc41A/viewform'
     };
     document.querySelectorAll('[data-form]').forEach(el => {
       el.addEventListener('click', (ev) => {
+        const formType = el.dataset.form;
+        if (formType === 'aluna') {
+          ev.preventDefault();
+          window.location.href = 'aluna.html';
+          return;
+        }
         ev.preventDefault();
-        const url = FORMS[el.dataset.form];
+        const url = FORMS[formType];
         if(!url || url === '#'){ alert('Em breve: link do formulário será conectado aqui.'); }
         else { window.open(url, '_blank', 'noopener'); }
       });
