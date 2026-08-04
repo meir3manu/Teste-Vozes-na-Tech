@@ -5,7 +5,7 @@ const path = require('path');
 
 const PORT = 8085;
 const SUPABASE_BASE_HOST = 'qeplhebidpkkwxazbdmk.supabase.co';
-const SUPABASE_SECRET_KEY = '';
+const SUPABASE_SECRET_KEY = process.env.SUPABASE_SECRET_KEY || '';
 
 // Content types mapping
 const MIME_TYPES = {
